@@ -1,0 +1,6 @@
+certifi
+charset-normalizer
+idna
+pyftpdlib
+requests
+urllib3
