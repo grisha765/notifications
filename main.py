@@ -6,8 +6,9 @@ logging = logging_config.setup_logging(__name__)
 logging.info(f"Script initialization, logging level: {Config.log_level}")
 logging.info(f"Notify link: {Config.ntfy_serv}{Config.ntfy_topic}")
 
-def main():
-    run_ftp_server()
+async def main():
+    await run_ftp_server()
 
 if __name__ == '__main__':
-    main()
+    import asyncio
+    asyncio.run(main())
