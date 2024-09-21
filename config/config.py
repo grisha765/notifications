@@ -7,7 +7,7 @@ class Config:
     ip: str = "0.0.0.0"
     port: int = 2121
     ntfy_serv: str = "https://ntfy.sh/"
-    ntfy_topic: str = "ergolyam"
+    camera_topic: str = "ergolyam"
 
     @classmethod
     def load_from_env(cls):
